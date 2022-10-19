@@ -8,22 +8,25 @@
 
 #VARIABLE
 
-# name = "Tim"
+name = "Tim"
+hello_wold => Python uses snake case (obviously), variables can't start with a digit
+print(type(name)) # => <class 'str'>
+print(5>10) # => False
 
-# print(type(name)) # => <class 'str'>
-# print(5>10) # => False
+print("hello", end="|") # => overwrites the default(every print statement starts at a new line)
+print("and welcome!")
 
-# username = input("Please enter username: ") # input will be string, even if int 
-# print(type(username))
+username = input("Please enter username: ") # input will be string, even if int 
+print(type(username))
 
-# quote ="""I wandered lonely as a cloud
-# That floats on high o'er vales and hills,
-# When all at once I saw a crowd,
-# A host, of golden daffodils;
-# Beside the lake, beneath the trees,
-# Fluttering and dancing in the breeze.
-# - William Wordsworth """
-# print(quote)
+quote ="""I wandered lonely as a cloud
+That floats on high o'er vales and hills,
+When all at once I saw a crowd,
+A host, of golden daffodils;
+Beside the lake, beneath the trees,
+Fluttering and dancing in the breeze.
+- William Wordsworth """
+print(quote)
 
 #int() float() complex() bool() 
 int(5.4) # => 5
