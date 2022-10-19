@@ -53,5 +53,8 @@ float_or_int = 5 - 5.0 #=> returns a float when there is a float i the expressio
 
 #STRING METHODS
 
-
-
+"python".upper()
+"python".lower()
+"python".capitalize()
+"python".count("t")
+"python".upper().count("T")
