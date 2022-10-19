@@ -9,7 +9,7 @@
 #VARIABLE
 
 name = "Tim"
-hello_wold => Python uses snake case (obviously), variables can't start with a digit
+hello_wold # => Python uses snake case (obviously), variables can't start with a digit
 print(type(name)) # => <class 'str'>
 print(5>10) # => False
 
@@ -35,3 +35,20 @@ bool("Hello") # => True
 #COMPLEX NUMBERS 
 num = 5 + 3j
 print(num)
+
+result = 6 / 3 # => returns a float 
+result2 = 10 // 3 #=> floor division
+6 ** 3 # => exponent
+6 % 5 # => modulo 
+
+#ORDER OF OPERATION 
+#BRACKETS
+#EXPONENTS
+#DIVISION
+#MULTIPLICATION
+#ADDITION
+#SUBTRACTION
+
+float_or_int = 5 - 5.0 #=> returns a float when there is a float i the expression
+
+
