@@ -9,7 +9,7 @@
 #VARIABLE
 
 name = "Tim"
-hello_wold # => Python uses snake case (obviously), variables can't start with a digit
+# => hello_world - Python uses snake case (obviously), variables can't start with a digit
 print(type(name)) # => <class 'str'>
 print(5>10) # => False
 
@@ -50,5 +50,8 @@ result2 = 10 // 3 #=> floor division
 #SUBTRACTION
 
 float_or_int = 5 - 5.0 #=> returns a float when there is a float i the expression
+
+#STRING METHODS
+
 
 
