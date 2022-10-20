@@ -89,7 +89,7 @@ elif condition == "Maybe":
 else:
     print("Nevermind, then, let's default to the original plan!")
 
-#Collections, lists and tuples
+#Collections, lists...
 list = [7, False, "Hello"]
 list.append(3.14)
 list.extend([1,2,3,4,5,6]) # => concatenates, adds it to the end of the list
@@ -104,3 +104,10 @@ x[0] = 3
 print(x, y) #=> [3, 'cats', 'are', 'better', 'than', 1] for both variables
 #to copy a list
 y = x[:]
+
+#...and tuples (which are immutable)
+x = (True, False, True, False)
+#x[1] = True #=> TypeError: 'tuple' object does not support item assignment
+print(x[1])
+#can have a list of lists and tuples
+y = [[], [], (), (1,2,3),[["Hello"], ["Greetings"]]]
