@@ -88,3 +88,19 @@ elif condition == "Maybe":
     print("That could also work!")
 else:
     print("Nevermind, then, let's default to the original plan!")
+
+#Collections, lists and tuples
+list = [7, False, "Hello"]
+list.append(3.14)
+list.extend([1,2,3,4,5,6]) # => concatenates, adds it to the end of the list
+list.pop() #=> returns removed last element, can take in index as an argument
+print(len(list), len(list[2]))
+list[2] = "reassigned_new_value"
+
+#lists are mutable - x and y stores a reference to the list, not a copy of the list
+x = [2, "cats", "are", "better", "than", 1]
+y = x
+x[0] = 3 
+print(x, y) #=> [3, 'cats', 'are', 'better', 'than', 1] for both variables
+#to copy a list
+y = x[:]
