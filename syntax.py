@@ -8,6 +8,10 @@
 
 #VARIABLE
 
+from multiprocessing.resource_sharer import stop
+from tracemalloc import start
+
+
 name = "Tim"
 # => hello_world - Python uses snake case (obviously), variables can't start with a digit
 print(type(name)) # => <class 'str'>
@@ -111,3 +115,22 @@ x = (True, False, True, False)
 print(x[1])
 #can have a list of lists and tuples
 y = [[], [], (), (1,2,3),[["Hello"], ["Greetings"]]]
+
+#FOR LOOPS
+
+for i in range(10):
+    print(i) #=> does not include 10 
+#arguments for range(start, stop, step)
+# 1 argument start
+# 2 arguments start, stop
+# 3rd argument is step
+
+for i in [1,2,3,4,5]:
+    print("I wanted to say this 5 times")
+
+for i in range(50, 5, -5):
+    print(str(i) + " is next")
+
+x = [1,8,3,9,5]
+for i, element in enumerate(x):
+    print(i, element)
