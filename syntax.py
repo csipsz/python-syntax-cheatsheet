@@ -80,3 +80,11 @@ result3 = z < x + 2 # => True
 print(5 < 4 or not True and True) #=> False 
 print(5 < 4 or not True and True or True) #=> True
 print(not (True and False)) #=> True
+
+condition = "Totally"
+if condition == "Totally":
+    print("That's right!")
+elif condition == "Maybe":
+    print("That could also work!")
+else:
+    print("Nevermind, then, let's default to the original plan!")
