@@ -134,3 +134,19 @@ for i in range(50, 5, -5):
 x = [1,8,3,9,5]
 for i, element in enumerate(x):
     print(i, element)
+
+#WHILE LOOPS
+i = 0
+while i < 20:
+    print("adding 5 to " + str(i))
+    i += 5 
+print("We've reached 20") 
+
+# i += 2
+# i -= 2
+# i /= 2
+# i *= 2
+
+while True:
+    print("You don't have to stuck in an infinite loop if you don't want to!")
+    break
