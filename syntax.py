@@ -215,6 +215,33 @@ x = {i for i in range(10) if i % 2 == 0} #=> {0, 2, 4, 6, 8}
 x = tuple(i for i in range(10) if i % 2 == 0)
 print(x)
 
+#FUNCTIONS 
+
+def func():
+    print('Run')
+    def callback():
+        print('Running callback')
+    callback()
+
+func() #=> Run
+       #=> Running callback
+
+#you can add optional/default parameters
+def func2(x,y, z=None):
+    print(x ** y)
+    return x ** y, x * y #=> multiple values are returned in a tuple
+
+print(func2(5,2)) #=> prints the return value 
+
+#separate the return values into variables from tuple
+#this works but you call the function twice
+r1 = func2(2,3)[0]
+r2 = func2(2,3)[1]
+#only calls the function once
+r1, r2 = func2(2,3)
+print(r1, r2)
+
+
 
 
 
