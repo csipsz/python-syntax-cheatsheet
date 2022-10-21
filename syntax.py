@@ -8,10 +8,6 @@
 
 #VARIABLE
 
-from multiprocessing.resource_sharer import stop
-from tracemalloc import start
-
-
 name = "Tim"
 # => hello_world - Python uses snake case (obviously), variables can't start with a digit
 print(type(name)) # => <class 'str'>
