@@ -159,3 +159,24 @@ x[2:] #starts at 2, stops at end
 x[:2] #starts at beginning, stops at 2
 x[::-1] #reverse the sting/array
 print("hello world"[::-1]) #=> dlrow olleh
+
+#SETS - fast in lookups, additions or removals
+#freuency, order doesn't matter, just the existence of the value 
+x = set() #creates empty set
+s = { 1,1,1,1,3,3,3,4,4,4,7,7,7,8,8,90 } #set literal
+print(s) #=> {1, 3, 4, 7, 8, 90}
+s.add(11)
+s.remove(1)
+print(3 in s) #=> True - very fast computation
+s2 = {18,19,50,76}
+s.union(s2)
+s.difference(s2)
+s.intersection(s2) #=> common values in 2 sets
+
+not_s = {} #creates empty dictionary
+print(type(set())) #=> <class 'set'>
+print(type({})) #=> <class 'dict'>
+
+
+
+
