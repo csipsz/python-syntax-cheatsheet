@@ -327,7 +327,9 @@ def func_for_map(i):
 #you can add a function as an argument, or write inline a lambda 
 print(list(map(func_for_map, x)))
 
-
+#F strings 
+x = f'hello {-1 or -6} {not False} {var1}'
+print(x)
 
 
 
