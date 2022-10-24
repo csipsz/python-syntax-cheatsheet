@@ -251,6 +251,30 @@ func(7)() #=> 7
 x = func(4)
 x()
 
+#unpack operator
+x = [1,2,3,4,5,6,7]
+print(*x) #unpacks and passes in as arguments
+
+def print_pairs(x,y):
+    print(x,y)
+
+pairs = [(2,4), (6,8)]
+
+for pair in pairs:
+    print_pairs(*pair)
+
+#with dicts: 
+print_pairs(**{'x': 2, 'y' : 9})
+
+#args, kwargs - arguments, keyword arguments
+def func(*args, **kwargs):
+    print(args, kwargs) #=> (1, 2, 3, 4) {'is_loggged': False, 'float': 3.14}
+    print(*args) #=> 1, 2, 3, 4
+    print(**kwargs) #=> 'is_loggged' is an invalid keyword argument for print()
+
+func(1,2,3,4,is_loggged=False, float=3.14)
+
+
 
 
 
