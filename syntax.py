@@ -270,9 +270,33 @@ print_pairs(**{'x': 2, 'y' : 9})
 def func(*args, **kwargs):
     print(args, kwargs) #=> (1, 2, 3, 4) {'is_loggged': False, 'float': 3.14}
     print(*args) #=> 1, 2, 3, 4
-    print(**kwargs) #=> 'is_loggged' is an invalid keyword argument for print()
+   # print(**kwargs) #=> 'is_loggged' is an invalid keyword argument for print()
 
 func(1,2,3,4,is_loggged=False, float=3.14)
+
+#Local and global scope 
+
+var1 = "global_variable"
+
+def func(fruit):
+    var1 = fruit 
+
+print(var1) #=> global_variable
+func('grape')
+print(var1) #=> global_variable
+
+#////////////////////////////////////////
+
+var1 = "global_variable"
+
+def func(fruit):
+    global var1
+    var1 = fruit 
+
+print(var1) #=> global_variable
+func('grape')
+print(var1) #=> grape
+
 
 
 
