@@ -297,6 +297,10 @@ print(var1) #=> global_variable
 func('grape')
 print(var1) #=> grape
 
+#raise Exception('Wrong value') #=>  raise Exception('Wrong value')
+                                #Exception: Wrong value
+#raise FileNotFoundError('404') #=> won't get to here, already raised exception
+
 
 
 
