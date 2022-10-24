@@ -239,6 +239,20 @@ print(r1, r2)
 
 
 
+def func(x):
+    def callback():
+        print(x)
+
+    return callback 
+
+print(func(7)) #=> <function func.<locals>.callback at 0x7fd7314d2d30>
+func(7)() #=> 7
+
+x = func(4)
+x()
+
+
+
 
 
 
