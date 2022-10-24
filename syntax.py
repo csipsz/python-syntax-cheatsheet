@@ -308,6 +308,21 @@ except ArithmeticError as e:
 finally:
     print("Past the exception")
 
+#LAMBDA is a one line anonymous function
+x = lambda x: x - 3  #not how is used, just shows functionality
+print(x(9))
+
+#map 
+
+x = [1,2,3,4,5]
+mp = map(lambda i: i - 2, x) #=> map returns a map object
+print(list(mp))
+
+ft = filter(lambda i: i % 2 == 0, x) 
+print(list(ft))
+
+
+
 
 
 
