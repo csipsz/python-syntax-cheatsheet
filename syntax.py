@@ -11,6 +11,8 @@
 name = "Tim"
 # => hello_world - Python uses snake case (obviously), variables can't start with a digit
 print(type(name)) # => <class 'str'>
+a = None
+print(type(a)) # <class 'NoneType'>
 print(5>10) # => False
 
 print("hello", end="|") # => overwrites the default(every print statement starts at a new line)
