@@ -1,0 +1,4 @@
+bread
+fish
+apples
+honey

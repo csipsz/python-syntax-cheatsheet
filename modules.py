@@ -30,3 +30,47 @@ print(c.month_name[1])
 # import filename, provided that it is in the current directory
 import other_file
 other_file.lets_print("It's going to be a lovely day!")
+
+#############################FILES#######################################
+
+with open('other_file.py') as file_object:
+    print(file_object) #=> <_io.TextIOWrapper name='other_file.py' mode='r' encoding='UTF-8'>
+    print(file_object.readline()) #=> prints 1st line
+    print(file_object.readline()) #=> 2nd line
+
+#parsinng json to a dicionary
+
+import json
+with open('json.json') as json_file:
+  python_dict = json.load(json_file)
+  
+print(python_dict.get("47915851546270")) #=> {'name': 'Evan Cooper', 'age': 45, 'position': 'Corporate investment banker'}
+
+
+#'a' for append. so it doesn't overwrite a file. It creates a new file if it doesn't exist
+with open('shopping.txt', 'a') as shop:
+  shop.write('Tomatoes\nmilk\noats')
+
+with open('shopping.txt','w') as shop:  #overwrites
+  shop.write('bread\nfish\napples\nhoney')
+
+with open('shopping.txt') as shop:
+  file_data = shop.readlines()
+  text_data = shop.read()
+print(file_data) #=> returns a list of strings
+print(text_data) #=> reads the whole file
+
+for line in file_data:
+  print(line)
+
+
+###############################################
+
+import csv
+
+with open('companies.csv', 'w') as csvfile:
+  fieldnames = ['name', 'type']
+  writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+  writer.writeheader()
+  writer.writerow({'name': 'Kroger', 'type': 'shopping'})
+  writer.writerow({'name': 'Amazon', 'type': 'online shopping'})
