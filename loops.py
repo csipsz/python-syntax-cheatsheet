@@ -3,7 +3,7 @@
 for i in range(10):
     print(i) #=> does not include 10 
 #arguments for range(start, stop, step)
-# 1 argument start
+# 1 argument stop
 # 2 arguments start, stop
 # 3rd argument is step
 
