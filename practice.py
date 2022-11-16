@@ -1,3 +1,5 @@
+import textwrap
+
 x = 2
 y = 1
 z = 3
@@ -15,3 +17,12 @@ print(res)
 helloarr = "hello world".split(" ")
 hellostring ="-".join(helloarr)
 print(hellostring)
+
+#mutate strings: 
+# string = string[:5] + "k" + string[6:]
+
+#control the max width of a line with textwrap module 
+def wrap(string, max_width):
+    return textwrap.fill(string, max_width)
+
+wrap('helloworld', 3)
