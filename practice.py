@@ -35,3 +35,10 @@ def count_substring(string, sub_string):
             counter += 1
         i += 1
     return counter
+#counting occurrences of substring using find instead of iterating through every character
+    # def count_substring(string, sub_string):
+    # count = 0
+    # while string.find(sub_string) != -1:
+    #     i, count = string.find(sub_string), count+1
+    #     string = string[i+1:]
+    # return count
