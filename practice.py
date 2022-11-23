@@ -26,3 +26,12 @@ def wrap(string, max_width):
     return textwrap.fill(string, max_width)
 
 wrap('helloworld', 3)
+
+#counting occurrences of substring
+def count_substring(string, sub_string):
+    counter = 0
+    for i in range(len(string)):
+        if string[i:len(sub_string) + i] == sub_string:
+            counter += 1
+        i += 1
+    return counter
