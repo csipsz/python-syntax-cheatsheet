@@ -42,3 +42,9 @@ def count_substring(string, sub_string):
     #     i, count = string.find(sub_string), count+1
     #     string = string[i+1:]
     # return count
+#sum can count boolean values
+print(sum([True, False, False, False, True, True]))
+#with comprehension:
+#return sum([string[i:].startswith(sub_string) for i in range(len(string))])
+#sum can count boolean values
+print(sum([True, False, False, False, True, True]))
