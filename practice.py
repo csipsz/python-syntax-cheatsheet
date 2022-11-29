@@ -48,3 +48,18 @@ print(sum([True, False, False, False, True, True]))
 #return sum([string[i:].startswith(sub_string) for i in range(len(string))])
 #sum can count boolean values
 print(sum([True, False, False, False, True, True]))
+
+
+import itertools
+def countPairs(arr):
+    result = 0
+    bitands = list(itertools.combinations(arr, 2))
+    bins = []
+    for i in bitands:
+        x, y = i
+        bins.append(x & y)     
+    for i in bins: 
+        if str(i).count('1') == 1:
+            result += 1 
+    return result
+    

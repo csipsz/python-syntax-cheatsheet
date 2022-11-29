@@ -59,3 +59,5 @@ for key, value in x.items():
 
 for whatever in x: #=> still prints the keys. The order of the arguments matter, key and value are not keywords here 
     print(whatever)
+
+    
